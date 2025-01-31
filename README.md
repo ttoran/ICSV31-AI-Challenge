@@ -53,7 +53,7 @@ Figure 3: Three different spots on the university campus chosen for background n
 
 
 - The drones were secured with two elastic ropes connected to the ceiling and floor, allowing free rotation and movement. A rotating ring was employed to minimize the impact of the ropes on the drone's motion.
-- The drone state labels comprise nine categories, including the normal state, four types of propeller defects, and four types of motor defects. The movement direction labels include six categories: forward, backward, right, left, clockwise, and counterclockwise.
+- The drone state labels consist of two categories: normal and anomaly. The movement direction labels include six categories: forward, backward, right, left, clockwise, and counterclockwise.
 - The types of drone defects include ***propeller defects*** (induced by cutting approximately 10% of a single propeller to generate abnormal vibrations) and ***motor defects*** (created by denting the motor cap using a vise to increase friction and hinder rotation).
 
 ![Figure4](figures/backgrounds.png)
