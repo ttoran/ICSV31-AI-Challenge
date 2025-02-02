@@ -249,9 +249,9 @@ This challenge is hosted by the KSNVE (Korean Society of Noise and Vibration Eng
 
 - Challenge organizers
 
-  - 📧 **Jung-Woo Choi (KAIST, School of Electrical Engineering)** 
-  - 📧 **Jihoon Choi (KAIST, School of Electrical Engineering)** 
-  - 📧 **Seojin Park (KAIST, School of Electrical Engineering)** 
-  - 📧 **Yewon Kim (KAIST, School of Electrical Engineering)** 
+  - 📧 **[Jung-Woo Choi](mailto:jwoo@kaist.ac.kr) (KAIST, School of Electrical Engineering)** 
+  - 📧 **[Jihoon Choi](mailto:wlgns2533@kaist.ac.kr) (KAIST, School of Electrical Engineering)** 
+  - 📧 **[Seojin Park](mailto:seojin@kaist.ac.kr) (KAIST, School of Electrical Engineering)** 
+  - 📧 **[Yewon Kim](mailto:yewon@kaist.ac.kr) (KAIST, School of Electrical Engineering)** 
 
 We look forward to your participation and are happy to assist with any questions!
