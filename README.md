@@ -243,6 +243,26 @@ All reports submitted to the challenge will be included in the conference procee
 Participants do not need to submit the report through the ICSV website separately. 
 
 
+## 6. Ranking
+
+The final performance score $S$ is calculated using the **AUC** scores of three drones (**A, B, and C**). First, the average AUC scores for the evaluation and test datasets are computed as follows:
+
+$$
+S_{\text{eval}} = \frac{1}{3} \sum_{i \in \{A, B, C\}} \text{AUC}_{\text{eval}, i}
+$$
+
+$$
+S_{\text{test}} = \frac{1}{3} \sum_{i \in \{A, B, C\}} \text{AUC}_{\text{test}, i}
+$$
+
+The final performance score $S$ is then calculated as a weighted sum of the evaluation and test scores, with **30% weight for the evaluation dataset** and **70% weight for the test dataset**:
+
+$$
+S = 0.3 \times S_{\text{eval}} + 0.7 \times S_{\text{test}}
+$$
+
+The final ranking will be determined based on this weighted score.
+
 
 ## Organizers
 This challenge is hosted by the KSNVE (Korean Society of Noise and Vibration Engineering). For inquiries, please send an email to [Organizing Committee (icsv31aichallenge@gmail.com).](mailto:icsv31aichallenge@gmail.com)
