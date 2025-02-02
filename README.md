@@ -245,10 +245,10 @@ Participants do not need to submit the report through the ICSV website separatel
 
 
 ## Organizers
-This challenge is hosted by the KSNVE (Korean Society of Noise and Vibration Engineering). For inquiries, please send an email to [Organizing Committee.](mailto: )
+This challenge is hosted by the KSNVE (Korean Society of Noise and Vibration Engineering). For inquiries, please send an email to [Organizing Committee.](mailto:icsv31aichallenge@gmail.com)
 
 - Challenge organizers
-  
+
   - 📧 **Jung-Woo Choi (KAIST, School of Electrical Engineering)** 
   - 📧 **Jihoon Choi (KAIST, School of Electrical Engineering)** 
   - 📧 **Seojin Park (KAIST, School of Electrical Engineering)** 
