@@ -139,7 +139,7 @@ def WaveNetModel() -> nn.Module:
     n_blocks = 3
     n_channel = 128
     n_mul = 4
-    frames = 63
+    frames = 47
     kernel_size = 3
     n_groups = 1
     return WaveNet(n_blocks, n_channel, n_mul, frames, kernel_size, n_groups)
