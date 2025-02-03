@@ -249,7 +249,7 @@
         <h4>File Names</h4>
         <p><strong>Train and Evaluation Data (5,400 train files, 1,080 eval files)</strong></p>
         <p>The filenames for the <span class="highlight">train</span> dataset follow the format:</p>
-        <p><span class="highlight"><strong></strong>[dataset]_[drone_type]_[moving_direction]_[anomaly_flag]_[data_index].wav</strong></span></p>
+        <p><span class="highlight"><strong>[dataset]_[drone_type]_[moving_direction]_[anomaly_flag]_[data_index].wav</strong></span></p>
         <p>where:</p>
         <ul>
             <li><span class="highlight">[dataset]</span> represents the dataset type (<span class="highlight">train</span> / <span class="highlight">eval</span> / <span class="highlight">test</span>).</li>
@@ -310,7 +310,7 @@
             <li><strong><span class="highlight">test.py</span></strong>: Extracts anomaly scores for the test dataset.</li>
         </ul>
 
-      <br><br>
+      <br>
       <h4>Model architecture</h4>
     
       <p>The baseline model utilizes <strong>WaveNet</strong> to perform a prediction task on spectrograms.<br>
@@ -320,7 +320,7 @@
       The model trained to minimize the prediction error of normal data tends to produce significantly higher prediction errors on anomalous data. This characteristic is leveraged for anomaly detection.</p>
 
 
-      <br><br>
+      <br>
       <h4>Anomaly score</h4>
     
       <p>The <strong>anomaly score</strong> is computed using the mean squared error (MSE) between the target and predicted spectrograms.</p>
@@ -388,7 +388,7 @@
         <li>The model training process</li>
         <li>The anomaly detection methodology</li>
       </ul>
-    
+    <br>
       <p>The technical report must be formatted according to the <a href="https://icsv31.org/index.php?va=viewpage&vaid=247">ICSV paper guideline</a>. All reports submitted to the challenge will be included in the conference proceeding as <strong>non-referred papers</strong>.
       Participants do not need to submit the report through the ICSV website separately.</p>
     </section>
