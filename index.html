@@ -200,9 +200,8 @@
         (W. Yi, J-W. Choi., J-W. Lee, "Sound-based drone fault classification using multi-task learning", Proceedings of the 29th International Congress on Sound and Vibration (ICSV 29), Prague, Czech Republic, July. 2023.)</p>
         <p>The previous dataset was significantly modified for this specific challenge.</p>
 
-
-
-        
+        <br><br>
+        <br><br>
         <h3>Dataset construction</h3>
         <p>The drones used in this study include the Holy Stone HS720 <strong>(Type A)</strong>, MJX Bugs 12 EIS <strong>(Type B)</strong>, and ZLRC SG906 Pro2 <strong>(Type C)</strong>.</p>
         <img src="figures/drones.png" width="90%" alt="Three drone types used for the experiment.">
@@ -221,19 +220,16 @@
         <img src="figures/fault.png" alt="Faults" width="500">
         <p style="text-align: center;"><em>Figure 3: Faults of drone type B. (a) propeller cut, (b) dented motor cap (red circle indicates dented part)</em></p>
 
-
-
-
-        
+        <br><br>
+        <br><br>
         <h3>Noise addition</h3>
         <p>To simulate real-flight conditions, drone sounds were mixed with background noise at a signal-to-noise ratio (SNR) of -5 to 5 dB. The background noise consists of recordings from three distinct outdoor locations (ponds, hills, and gates), as well as <a href="https://zenodo.org/record/1227121">DEMAND Noise</a>, which includes noise from the park, town square, and traffic intersection environments.</p>
 
         <img src="figures/backgrounds.png" alt="Background noise recording locations">
         <p style="text-align: center;"><em>Figure 4: Three different spots on the university campus chosen for background noise recording: (a) pond, (b) hill, and (c) gate.</em></p>
 
-
-
-        
+        <br><br>
+        <br><br>
         <h3>Dataset category</h3>
         <p>Data is provided in three categories: <span class="highlight">train</span> and <span class="highlight">eval</span> for development, and <span class="highlight">test</span> for competition submission.</p>
         <blockquote>
@@ -246,9 +242,8 @@
             <li>The <span class="highlight">eval</span> dataset includes six types of defects: three propeller defects and three motor defects. In contrast, the <span class="highlight">test</span> dataset contains a total of eight defect types, incorporating one additional propeller defect and one additional motor defect not present in the <span class="highlight">eval</span> dataset.</li>
         </ul>
 
-
-
-        
+        <br><br>
+        <br><br>
         <h3>Dataset composition</h3>
         <h4>File Names</h4>
         <p><strong>Train and Evaluation Data (5,400 train files, 1,080 eval files)</strong></p>
@@ -267,9 +262,8 @@
         <p>The filenames for the <span class="highlight">test</span> dataset follow the format:</p>
         <p><span class="highlight">[dataset]_[drone_type]_[moving_direction]_[data_index].wav</span></p>
 
-
-
-        
+        <br><br>
+        <br><br>
         <h3>Data specification</h3>
         <h4>Train dataset</h4>
         <img src="figures/train_dataset.png" width="80%" alt="Train dataset">
@@ -316,9 +310,8 @@
         <li><strong>test.py</strong>: Extracts anomaly scores for the test dataset.</li>
       </ul>
 
-
-
-        
+      <br><br>
+      <br><br>
       <h4>Model architecture</h4>
     
       <p>The baseline model utilizes <strong>WaveNet</strong> to perform a prediction task on spectrograms.<br>
@@ -327,9 +320,8 @@
       <p>In the baseline model, WaveNet performs causal convolution to predict future spectral frames in the spectrogram.<br>
       The model trained to minimize the prediction error of normal data tends to produce significantly higher prediction errors on anomalous data. This characteristic is leveraged for anomaly detection.</p>
 
-
-
-        
+      <br><br>
+      <br><br>
       <h4>Anomaly score</h4>
     
       <p>The <strong>anomaly score</strong> is computed using the mean squared error (MSE) between the target and predicted spectrograms.</p>
@@ -344,6 +336,9 @@
         \text{Score} = \frac{1}{T - l} \sum_{t=l+1}^{T} |x_t - \hat{x}_t|^2
         $$</div>
         <p>where the mean squared error (MSE) measures the deviation between the actual and predicted spectrogram frames.</p>
+
+      <br><br>
+       <br><br>
       <h4>Performance of baseline model</h4>
     
       <p>The <strong>baseline model</strong> was trained for <strong>100 epochs</strong> with a <strong>learning rate of 1e-3</strong> and a <strong>batch size of 64</strong>.</p>
