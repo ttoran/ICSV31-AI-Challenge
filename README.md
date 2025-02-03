@@ -174,7 +174,7 @@ Teams are free to develop their own models.
 The code consists of three files:
 
 - **`train.py`**: Trains a deep learning model using the train dataset.
-- **`eval.py`**: Evaluates the model performance using the validation dataset.
+- **`eval.py`**: Evaluates the model performance using the evaluation dataset.
 - **`test.py`**: Extracts anomaly scores for the test dataset.
 
 
@@ -275,3 +275,17 @@ This challenge is hosted by the KSNVE (Korean Society of Noise and Vibration Eng
   - 📧 **[Yewon Kim](mailto:yewon@kaist.ac.kr) (KAIST, School of Electrical Engineering)** 
 
 We look forward to your participation and are happy to assist with any questions!
+
+
+
+## License
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
