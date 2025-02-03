@@ -154,7 +154,7 @@
         <h2>Overview</h2>
         <p>The organizing committee of the ICSV31 conference hosts an AI Challenge focusing on diagnosing machine anomalies using acoustic signals.<br>
         Participants will train AI models on drone sound signals and identify anomalies from a provided dataset. A grand prize of <strong>1,500 USD</strong> will be awarded to the winning team.</p>
-        <p>Participation is team-based, and <em>at least one team member must be a registered attendee of the ICSV31 conference</em> at the time of model submission.</p>
+        <p>Participation is team-based, and <em>at least one team member must be a registered attendee of the ICSV31 conference</em> at the time of model submission. The conference will also hold a dedicated workshop session for participating teams.</p>
     </section>
 
     <section>
@@ -249,7 +249,7 @@
         <h4>File Names</h4>
         <p><strong>Train and Evaluation Data (5,400 train files, 1,080 eval files)</strong></p>
         <p>The filenames for the <span class="highlight">train</span> dataset follow the format:</p>
-        <p><span class="highlight">[dataset]_[drone_type]_[moving_direction]_[anomaly_flag]_[data_index].wav</span></p>
+        <p><span class="highlight"><strong></strong>[dataset]_[drone_type]_[moving_direction]_[anomaly_flag]_[data_index].wav</strong></span></p>
         <p>where:</p>
         <ul>
             <li><span class="highlight">[dataset]</span> represents the dataset type (<span class="highlight">train</span> / <span class="highlight">eval</span> / <span class="highlight">test</span>).</li>
@@ -261,7 +261,7 @@
         
         <p><strong>Test Data (Total 1,440 files)</strong></p>
         <p>The filenames for the <span class="highlight">test</span> dataset follow the format:</p>
-        <p><span class="highlight">[dataset]_[drone_type]_[moving_direction]_[data_index].wav</span></p>
+        <p><span class="highlight"><strong>[dataset]_[drone_type]_[moving_direction]_[data_index].wav</strong></span></p>
 
         <br><br>
         <h3>Data specification</h3>
@@ -287,9 +287,9 @@
         <h2>3. Evaluation metrics</h2>
         <p>The evaluation metric for this challenge is <strong>ROC-AUC (Receiver Operating Characteristic - Area Under the Curve, AU-ROC)</strong>. ROC-AUC evaluates how well the distributions of normal and anomalous data are separated, independent of any specific decision boundary.</p>
         <ul>
-            <li><strong><span class="highlight">train.py</span></strong>: Trains a deep learning model using the train dataset.</li>
-            <li><strong><span class="highlight">eval.py</span></strong>: Evaluates the model performance using the validation dataset.</li>
-            <li><strong><span class="highlight">test.py</span></strong>: Extracts anomaly scores for the test dataset.</li>
+            <li><strong>ROC-AUC</strong> represents the relationship between the False Positive Rate (FPR) and the True Positive Rate (TPR) in the form of a curve, and the area under this curve (AUC) is used as a numerical measure of model performance.</li>
+            <li>The ROC-AUC score ranges from <strong>0 to 1</strong>, where a value closer to 1 indicates that the model is highly effective at distinguishing between normal and anomalous data.</li>
+            <li>An AUC score of <strong>0.5</strong> suggests that the model performs no better than random guessing in separating normal and anomalous data.</li>
         </ul>
         <p><strong>ROC-AUC</strong> will be calculated by the <strong>organizing committee</strong> using the <span class="highlight">.csv</span> files submitted by participants. (Participants are not required to calculate or submit the ROC-AUC score themselves.)</p>
         <img src="figures/auc.png" alt="ROC-AUC Curve">
@@ -305,10 +305,10 @@
       <p>The code consists of three files:</p>
     
       <ul>
-        <li><strong>train.py</strong>: Trains a deep learning model using the train dataset.</li>
-        <li><strong>eval.py</strong>: Evaluates the model performance using the evaluation dataset.</li>
-        <li><strong>test.py</strong>: Extracts anomaly scores for the test dataset.</li>
-      </ul>
+            <li><strong><span class="highlight">train.py</span></strong>: Trains a deep learning model using the train dataset.</li>
+            <li><strong><span class="highlight">eval.py</span></strong>: Evaluates the model performance using the validation dataset.</li>
+            <li><strong><span class="highlight">test.py</span></strong>: Extracts anomaly scores for the test dataset.</li>
+        </ul>
 
       <br><br>
       <h4>Model architecture</h4>
@@ -332,7 +332,7 @@
         <p>Given the input data <span class="math">X = [x<sub>1</sub>, ..., x<sub>T</sub>]</span>, the model predicts <span class="math">X̂ = [x̂<sub>l+1</sub>, ..., x̂<sub>T+1</sub>]</span>.<br>
         The <strong>anomaly score</strong> for each data point is computed as:</p>
         <div style="text-align: center; font-family: 'Cambria Math', 'STIX Two Math', 'Latin Modern Math', serif !important; ">$$
-        \text{Score} = \frac{1}{T - l} \sum_{t=l+1}^{T} |x_t - \hat{x}_t|^2
+        \text{Score} = \frac{1}{T - l} \sum_{t=l+1}^{T} |x_t - \hat{x}_t|^2,
         $$</div>
         <p>where the mean squared error (MSE) measures the deviation between the actual and predicted spectrogram frames.</p>
 
@@ -389,15 +389,14 @@
         <li>The anomaly detection methodology</li>
       </ul>
     
-      <p>The technical report must be formatted according to the <a href="https://icsv31.org/index.php?va=viewpage&vaid=247">ICSV paper guideline</a>.<br>
-      All reports submitted to the challenge will be included in the conference proceeding as <strong>non-referred papers</strong>.<br>
+      <p>The technical report must be formatted according to the <a href="https://icsv31.org/index.php?va=viewpage&vaid=247">ICSV paper guideline</a>. All reports submitted to the challenge will be included in the conference proceeding as <strong>non-referred papers</strong>.
       Participants do not need to submit the report through the ICSV website separately.</p>
     </section>
     
     <section>
       <h2>6. Ranking</h2>
     
-      <p>The final performance score <span style="font-family: monospace;">S</span> is calculated using the <strong>AUC</strong> scores of three drones (<strong>A, B, and C</strong>). First, the average AUC scores for the evaluation and test datasets are computed as follows:</p>
+      <p>The final performance score \(\mathit{S}\) is calculated using the <strong>AUC</strong> scores of three drones (<strong>A, B, and C</strong>). First, the average AUC scores for the evaluation and test datasets are computed as follows:</p>
     
       <div style="text-align: center; font-family: 'Cambria Math', 'STIX Two Math', 'Latin Modern Math', serif !important;">$$
         S_{eval} = \frac{1}{3} \sum_{i \in \{A, B, C\}} AUC_{eval, i}
@@ -407,7 +406,7 @@
         S_{test} = \frac{1}{3} \sum_{i \in \{A, B, C\}} AUC_{test, i}
         $$</div>
     
-      <p>The final performance score <span style="font-family: monospace;">S</span> is then calculated as a weighted sum of the evaluation and test scores, with <strong>30% weight for the evaluation dataset</strong> and <strong>70% weight for the test dataset</strong>:</p>
+      <p>The final performance score \(\mathit{S}\) is then calculated as a weighted sum of the evaluation and test scores, with <strong>30% weight for the evaluation dataset</strong> and <strong>70% weight for the test dataset</strong>:</p>
     
       <div style="text-align: center; font-family: 'Cambria Math', 'STIX Two Math', 'Latin Modern Math', serif !important;">$$
         S = 0.3 \times S_{eval} + 0.7 \times S_{test}
