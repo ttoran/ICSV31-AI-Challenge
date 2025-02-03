@@ -73,7 +73,7 @@ The recorded drone sounds, originally sampled at 48 kHz, were downsampled to 16 
 Figure 3: Faults of drone type B. (a) propeller cut, (b) dented motor cap (red circle indicates dented part)
 
 ### Noise addition
-To simulate real-flight conditions, drone sounds were mixed with background noise at a signal-to-noise ratio (SNR) of -5 to 5 dB. The background noise consists of recordings from three distinct outdoor locations (ponds, hills, and gates), as well as industrial noise from ToyADMOS Noise recorded in a real factory environment.
+To simulate real-flight conditions, drone sounds were mixed with background noise at a signal-to-noise ratio (SNR) of -5 to 5 dB. The background noise consists of recordings from three distinct outdoor locations (ponds, hills, and gates), as well as [DEMAND Noise](https://zenodo.org/record/1227121), which includes noise from the park, town square, and traffic intersection environments.
 
 ![Figure4](figures/backgrounds.png)
 Figure 4: Three different spots on the university campus chosen for background noise recording: (a) pond, (b) hill, and (c) gate.
@@ -136,7 +136,7 @@ The filenames for the `test` dataset follow the format:
 
 ![evaluation dataset](figures/evaluation_dataset.png)
 
-- The number of types is **60** per drone type, movement direction, and anomaly type.
+- The number of files is **60** per drone type, moving direction, and fault type.
 - The total number of files is **60 × 3 (drone types) × 6 (movement directions) = 1,080**.
 - **MF**: Motor Cap Fault
 - **PC**: Propeller Cut
@@ -146,7 +146,7 @@ The filenames for the `test` dataset follow the format:
 
 ![test dataset](figures/test_dataset.png)
 
-- The number of types is **80** per drone type, movement direction, and anomaly type.
+- The number of files is **80** per drone type, moving direction, and fault type.
 - The total number of files is **80 × 3 (drone types) × 6 (movement directions) = 1,440**.
 
 
