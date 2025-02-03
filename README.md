@@ -62,7 +62,7 @@ Drone sounds were recorded using a RØDE Wireless Go2 wireless microphone mounte
 Figure 2: (a) RøDE Wireless Go2 microphones (transmitter, receiver), (b) recording sounds of drone type B 
 
 
-The recorded drone sounds, originally sampled at 48 kHz, were downsampled to 16 kHz and segmented into 1.5-second segments.
+The recorded drone sounds, originally sampled at 48 kHz, were downsampled to 16 kHz and segmented into 2-second segments.
 
 - The drones were secured with two elastic ropes connected to the ceiling and floor, allowing free rotation and movement. A rotating ring was employed to minimize the impact of the ropes on the drone's motion.
 - The moving direction labels include six categories: forward, backward, right, left, clockwise, and counterclockwise.
