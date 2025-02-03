@@ -137,7 +137,7 @@ The filenames for the `test` dataset follow the format:
 ![evaluation dataset](figures/evaluation_dataset.png)
 
 - The number of files is **60** per drone type, moving direction, and fault type.
-- The total number of files is **60 × 3 (drone types) × 6 (movement directions) = 1,080**.
+- The total number of files is **60 × 3 (drone types) × 6 (moving directions) = 1,080**.
 - **MF**: Motor Cap Fault
 - **PC**: Propeller Cut
 
@@ -147,7 +147,7 @@ The filenames for the `test` dataset follow the format:
 ![test dataset](figures/test_dataset.png)
 
 - The number of files is **80** per drone type, moving direction, and fault type.
-- The total number of files is **80 × 3 (drone types) × 6 (movement directions) = 1,440**.
+- The total number of files is **80 × 3 (drone types) × 6 (moving directions) = 1,440**.
 
 
 ## 3. Evaluation metrics
