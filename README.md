@@ -16,7 +16,7 @@ Participation is team-based, and _at least one team member must be a registered 
 ### 📢 Key dates
 | Event                                                        | Date         |
 | ------------------------------------------------------------ | ------------ |
-| Challenge Launch (distribution of task descriptions, train & eval datasets) | 5 Feb. 2025  |
+| Challenge launch (distribution of task descriptions, train & eval datasets) | 5 Feb. 2025  |
 | Distribution of test dataset                                 | 1 April 2025 |
 | Final submission (Anomaly score, trained model, technical report) | 21 May 2025  |
 | Competition result announcement                              | 31 May 2025  |
@@ -26,7 +26,7 @@ Participation is team-based, and _at least one team member must be a registered 
 ## 1. Introduction
 
 
-**2025 ICSV AI Challenge** aims to diagnose the state of drones by detecting anomalous sounds caused by mechanical failures in propellers and motors in noisy environments. In particular, drone sounds that vary depending on operational conditions, such as flight directions, along with background noise, make this task highly challenging.
+**ICSV31 AI Challenge** aims to diagnose the state of drones by detecting anomalous sounds caused by mechanical failures in propellers and motors in noisy environments. In particular, drone sounds that vary depending on operational conditions, such as flight directions, along with background noise, make this task highly challenging.
 
 The ultimate goal of the competition is to develop anomaly detection models capable of identifying anomalies in drones using data collected under various conditions.
 
