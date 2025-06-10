@@ -227,17 +227,11 @@
     <section>
         <h2>Update history</h2>
         <p><strong>2025-02-05 23:00 (KST):</strong> Challenge Launch</p>
+        <p><strong>2025-06-11 00:00 (KST):</strong> Challenge Results Announcement</p>
     </section>
 
     <section>
-        <h2>Overview</h2>
-        <p>The organizing committee of the <a href="https://icsv31.org/">ICSV31</a> conference hosts an AI Challenge focusing on diagnosing machine anomalies using acoustic signals.<br>
-        Participants will train AI models on drone sound signals and identify anomalies from a provided dataset. A grand prize of <strong>1,500 USD</strong> will be awarded to the winning team.</p>
-        <p>Participation is team-based, and <em>at least one team member must be a registered attendee of the <a href="https://icsv31.org/">ICSV31</a> conference</em> at the time of model submission. The conference will also hold a dedicated workshop session for participating teams.</p>
-    </section>
-
-    <section>
-        <h2>Challenge Results</h2>
+        <h2>&#128227; Challenge Results</h2>
     
         <h3>Total Results</h3>
         <table style="width: 80%; margin: auto; border-collapse: collapse;" border="1">
@@ -284,10 +278,160 @@
                 <td>50.34</td>
             </tr>
         </table>
+
+        <h3>Evaluation Results (AUC)</h3>
+        <table style="width: 90%; margin: auto; border-collapse: collapse;" border="1">
+            <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>Drone A</th>
+                <th>Drone B</th>
+                <th>Drone C</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>TCLAB</td>
+                <td>91.57</td>
+                <td>92.68</td>
+                <td>96.35</td>
+                <td>93.29</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Droneomaly Hunters</td>
+                <td>90.44</td>
+                <td>91.67</td>
+                <td>95.97</td>
+                <td>92.14</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>NUS</td>
+                <td>73.36</td>
+                <td>78.11</td>
+                <td>84.13</td>
+                <td>78.09</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Baseline</td>
+                <td>63.71</td>
+                <td>54.05</td>
+                <td>61.77</td>
+                <td>59.74</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>一发出隐</td>
+                <td>53.86</td>
+                <td>42.98</td>
+                <td>47.07</td>
+                <td>47.86</td>
+            </tr>
+        </table>
+
+        <h3>Test Results (AUC)</h3>
+        <table style="width: 95%; margin: auto; border-collapse: collapse;" border="1">
+            <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>Drone A, Seen</th>
+                <th>Drone A, Unseen</th>
+                <th>Drone A, All</th>
+                <th>Drone B, Seen</th>
+                <th>Drone B, Unseen</th>
+                <th>Drone B, All</th>
+                <th>Drone C, Seen</th>
+                <th>Drone C, Unseen</th>
+                <th>Drone C, All</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>TCLAB</td>
+                <td>82.51</td>
+                <td>92.58</td>
+                <td>92.66</td>
+                <td>92.48</td>
+                <td>92.88</td>
+                <td>93.01</td>
+                <td>97.46</td>
+                <td>96.35</td>
+                <td>97.12</td>
+                <td>94.17</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Droneomaly Hunters</td>
+                <td>91.97</td>
+                <td>91.49</td>
+                <td>92.28</td>
+                <td>89.69</td>
+                <td>88.76</td>
+                <td>90.18</td>
+                <td>96.20</td>
+                <td>95.82</td>
+                <td>96.09</td>
+                <td>92.38</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>NUS</td>
+                <td>74.28</td>
+                <td>73.07</td>
+                <td>74.18</td>
+                <td>78.96</td>
+                <td>76.77</td>
+                <td>78.49</td>
+                <td>87.11</td>
+                <td>89.30</td>
+                <td>86.76</td>
+                <td>79.47</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Baseline</td>
+                <td>62.51</td>
+                <td>63.62</td>
+                <td>62.36</td>
+                <td>57.15</td>
+                <td>55.29</td>
+                <td>56.04</td>
+                <td>61.06</td>
+                <td>64.49</td>
+                <td>59.91</td>
+                <td>59.30</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>一发出隐</td>
+                <td>47.55</td>
+                <td>48.40</td>
+                <td>45.96</td>
+                <td>53.86</td>
+                <td>60.62</td>
+                <td>54.87</td>
+                <td>50.70</td>
+                <td>51.73</td>
+                <td>50.19</td>
+                <td>50.42</td>
+            </tr>
+        </table>
+
     </section>
     
     <section>
-        <h2>&#128227; Key dates</h2>
+        <h2>Overview</h2>
+        <p>The organizing committee of the <a href="https://icsv31.org/">ICSV31</a> conference hosts an AI Challenge focusing on diagnosing machine anomalies using acoustic signals.<br>
+        Participants will train AI models on drone sound signals and identify anomalies from a provided dataset. A grand prize of <strong>1,500 USD</strong> will be awarded to the winning team.</p>
+        <p>Participation is team-based, and <em>at least one team member must be a registered attendee of the <a href="https://icsv31.org/">ICSV31</a> conference</em> at the time of model submission. The conference will also hold a dedicated workshop session for participating teams.</p>
+    </section>
+
+    
+    
+    <section>
+        <h2>Key dates</h2>
         <table border="1" style="width: 80%; margin: auto;">
             <tr>
                 <th>Event</th>
