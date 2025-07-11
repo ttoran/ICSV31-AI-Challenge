@@ -42,9 +42,9 @@ The ultimate goal of the competition is to develop anomaly detection models capa
 
 ## 2. Dataset
 
-Dataset for ICSV31 AI Challenge: [download](https://drive.google.com/file/d/1BK-dpXG68gTmwA68JbbDW10AlaVRMYJU/view?usp=sharing)
-Test Dataset for ICSV31 AI Challenge: [download](https://drive.google.com/file/d/1veguvvaMPhcwwNr1vKE9QPiZkmK-i_5N/view?usp=sharing)
-Test labels for ICSV31 AI Challenge: [download](https://drive.google.com/file/d/1jsOcfb_k4XnDPfegJha_j-5TJC4dws4N/view?usp=sharing)
+Dataset for ICSV31 AI Challenge: [download](https://drive.google.com/file/d/1BK-dpXG68gTmwA68JbbDW10AlaVRMYJU/view?usp=sharing) <bf>
+Test Dataset for ICSV31 AI Challenge: [download](https://drive.google.com/file/d/1veguvvaMPhcwwNr1vKE9QPiZkmK-i_5N/view?usp=sharing) <bf>
+Test labels for ICSV31 AI Challenge: [download](https://drive.google.com/file/d/1jsOcfb_k4XnDPfegJha_j-5TJC4dws4N/view?usp=sharing) <bf>
 
 This ICSV31 AI Challenge dataset is based on the [drone noise data](https://arxiv.org/abs/2304.11708), originally constructed by Wonjun Yi, Jung-Woo Choi, Jae-Woo Lee for the drone fault classification task.  
 (W. Yi, J-W. Choi., J-W. Lee, "Sound-based drone fault classification using multi-task learning", Proceedings of the 29th International Congress on Sound and Vibration (ICSV 29), Prague, Czech Republic, July. 2023.)
