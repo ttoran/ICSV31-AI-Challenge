@@ -1,6 +1,7 @@
-train_dir: ./data/train
-eval_dir: ./data/eval
-test_dir: ./data/test
+train_dir: /content/drive/My Drive/2025AIChallenge/Dataset/train
+eval_dir: /content/drive/My Drive/2025AIChallenge/Dataset/eval
+test_dir: /content/drive/My Drive/2025AIChallenge/Dataset/test
+
 
 result_dir: ./results/baseline
 model_dir: ./model/baseline
@@ -11,7 +12,7 @@ epochs: 100
 batch_size: 64
 lr: 1e-3
 
-gpu: 7
+gpu: 0
 n_workers: 2
 
 sr: 16000
