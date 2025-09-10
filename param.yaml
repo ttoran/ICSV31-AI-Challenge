@@ -1,6 +1,6 @@
-train_dir: /content/drive/My Drive/2025AIChallenge/Dataset/train
-eval_dir: /content/drive/My Drive/2025AIChallenge/Dataset/eval
-test_dir: /content/drive/My Drive/2025AIChallenge/Dataset/test
+train_dir: C:\Son\Dataset\train
+eval_dir: C:\Son\Dataset\eval
+test_dir: C:\Son\Dataset\test
 
 
 result_dir: ./results/baseline
@@ -13,7 +13,7 @@ batch_size: 64
 lr: 1e-3
 
 gpu: 0
-n_workers: 2
+n_workers: 4
 
 sr: 16000
 n_fft: 1024
