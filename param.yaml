@@ -1,6 +1,6 @@
-train_dir: C:\Son\Dataset\train
-eval_dir: C:\Son\Dataset\eval
-test_dir: C:\Son\Dataset\test
+train_dir: C:\Users\DEU\Desktop\2025AiChallenge\Dataset\train
+eval_dir: C:\Users\DEU\Desktop\2025AiChallenge\Dataset\eval
+test_dir: C:\Users\DEU\Desktop\2025AiChallenge\Dataset\test
 
 
 result_dir: ./results/baseline
